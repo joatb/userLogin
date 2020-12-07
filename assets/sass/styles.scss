@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+$primary: #00695c;
+$secondary: #26a69a;
+$link: $primary;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+// selection
+::selection {
+  color: $white;
+  background: $secondary;
+}
+
+// button
+.button.is-primary {
+  background-color: $primary;
+}
+
+.button.is-primary:hover {
+  background-color: $secondary;
+}
+
+.button.is-text {
+  color: $primary;
+}
+
+.button.is-text:hover {
+  color: $secondary;
+  background-color: white;
+}

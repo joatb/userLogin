@@ -1,0 +1,51 @@
+<!-- José Alberto Torrents Batista -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="section columns">
+      <form
+        class="box container column is-one-quarter-desktop is-full-touch p-5"
+        action="login"
+        method="post"
+      >
+        <h1 class="title">Login</h1>
+        <div class="field">
+          <input class="input" type="text" placeholder="Nom Usuari" name="userName" value="" /><br />
+        </div>
+        <div class="field">
+          <input class="input" type="password" placeholder="Contrasenya" name="password" /><br />
+        </div>
+        <div class="field">
+          <button class="button is-primary is-fullwidth" type="submit">Iniciar Sessió</button>
+        </div>
+        <p>
+          <?php
+                $d = new DateTime('now');
+                echo $d->format('Y-m-d'); ?>
+        </p>
+        <div class="field has-text-centered" id="registerLoginLink">
+          <a class="button is-text" href="registre.html">Registrar-se</a>
+        </div>
+        <div class="field has-text-centered">
+          <a class="button is-text" href="forgotPassword">Heu oblidat la contrasenya?</a>
+        </div>
+        <article class="field message is-danger">
+          <div class="message-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum
+            rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
+            <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec
+            sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque.
+            Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          </div>
+        </article>
+      </form>
+    </section>
+  </body>
+</html>
